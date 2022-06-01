@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/homeImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/home"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gradient_background" />
+
+    <TextView
+        android:id="@+id/myRestaraunts"
+        android:layout_width="375dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="21dp"
+        android:fontFamily="@font/alex_brush"
+        android:gravity="center"
+        android:text=" Restaurants"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/btnRestaurants"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="@color/black"
+        android:paddingBottom="2mm"
+        android:text="Find Restaurants"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTxtInputZipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/myRestaraunts"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="99dp"
+
+        android:background="@color/dark_purple"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Input ZipCode"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
